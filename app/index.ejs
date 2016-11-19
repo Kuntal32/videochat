@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<script>
+
+</script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Hang Out</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/hangout.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<!-- Add jQuery library -->
+<script type="text/javascript" src="lib/jquery-1.10.1.min.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="lib/jquery.mousewheel-3.0.6.pack.js"></script>
+ <script src="/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="/easyrtc/easyrtc.js"></script>
+<script type="text/javascript" src="js/video.js"></script>
+<script>
+
+</script>
+<style>
+.self{
+ width: 100%;
+    height: 100%;
+
+}
+.other{
+	width:100%;
+	height:100%;
+}
+.small_vid{
+width:150px;
+	height:150px;
+  overflow: hidden;
+  z-index: 10001;
+  margin-top: 274px;
+  position: absolute;
+  margin-left: 390px;
+
+}
+.connectControls{
+
+
+}
+</style>
+<script>
+
+</script>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" onload="connect();" >
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+               <h2>Hang Out</h2>
+            </div>
+			 
+           
+        </div>
+      
+    </nav>
+
+    <!-- Intro Header -->
+    
+
+    <!-- About Section -->
+    
+
+    <!-- Download Section -->
+    <section id="hang_out" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                   <input type="hidden" value="<%= username %>" name="uname" id="uname"></input>
+					<div class="row">
+					<div id="iam">Not yet connected...</div>
+						<br />
+					<div class="col-md-3">	
+						 <div id="connectControls">
+							
+							<strong>Connected users:</strong>
+							
+							<div id="otherClients" ></div>
+						</div>
+					</div>
+					
+					<div class="col-md-9">
+					<div class="small_vid">
+						<video autoplay="autoplay" class="self"  id="callerVideo"></video>
+					</div>
+					
+					<video autoplay="autoplay" class="other" id="selfVideo" muted="muted" volume="0" >
+					
+					
+					</video>
+					
+					</div>
+				
+           
+			
+					  
+					</div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	
+	
+	 
+
+  
+   
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Hang Out 2015</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+  
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/javascript.js"></script>
+
+</body>
+
+</html>
