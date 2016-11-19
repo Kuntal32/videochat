@@ -1,8 +1,8 @@
 {
-  "name"        : "easyrtc_server_example",
+  "name"        : "social123",
   "version"     : "0.1.6",
-  "author"      : "Priologic Software Inc. <info@priologic.com> (http://priologic.com/)",
-  "description" : "Simple EasyRTC server example which includes EasyRTC, Express, and Socket.io",
+  "author"      : "kuntal",
+  "description" : "test",
 
   "private"     : true,
 
